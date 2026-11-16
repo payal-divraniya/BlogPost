@@ -1,0 +1,86 @@
+/* Modern Pagination Controls */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0 24px;
+}
+
+.pagination-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.pag-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-fast);
+}
+
+.pag-btn:hover:not(:disabled) {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.pag-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pag-icon {
+  font-size: 15px;
+}
+
+.page-counter-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.current-page-num {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.page-divider {
+  color: var(--text-subtle);
+}
+
+.total-pages-num {
+  color: var(--text-muted);
+}
+
+/* Legacy fallbacks */
+.pagination-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+.btn-dark {
+  background-color: #6366f1;
+}
+
+.btn-light {
+  background-color: #4f46e5;
+}

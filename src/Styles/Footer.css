@@ -1,0 +1,211 @@
+
+  /* Modern Site Footer */
+  .site-footer {
+    width: 100%;
+    margin-top: auto;
+    border-top: 1px solid var(--border-light);
+    padding: 64px 24px 24px;
+    background-color: var(--bg-surface);
+    transition: all var(--transition-normal);
+  }
+
+
+  .footer-top-grid {
+    max-width: 1280px;
+    margin: 0 auto 48px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 48px;
+  }
+
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+
+  .footer-logo-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-md);
+    background: var(--primary);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+
+  .footer-logo-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+  }
+
+
+  .footer-tagline {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 320px;
+  }
+
+
+  .footer-social-icons {
+    display: flex;
+    gap: 12px;
+  }
+
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: all var(--transition-fast);
+  }
+
+
+  .social-link:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+  }
+
+
+    .footer-col-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+      transform: translateX(3px);
+      display: inline-block;
+    }
+
+      .platform-meta {
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+
+      .secure-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        border-radius: var(--radius-full);
+        background: rgba(16, 185, 129, 0.1);
+        color: #059669;
+        font-size: 12px;
+        font-weight: 600;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        width: fit-content;
+      }
+
+
+      .secure-badge .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #10b981;
+      }
+
+      .footer-bottom-bar {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 24px;
+        border-top: 1px solid var(--border-light);
+        text-align: center;
+      }
+
+
+      .copyright-text {
+        font-size: 13px;
+        color: var(--text-subtle);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+
+      .copyright-text span {
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+
+      .heart-icon {
+        color: #ef4444;
+        font-size: 14px;
+      }
+
+
+      /* Legacy fallback */
+      .footer {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+
+      /* Responsive */
+      @media (max-width: 960px) {
+        .footer-top-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 36px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .footer-top-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+
+        .site-footer {
+          padding: 40px 16px 20px;
+        }
+      }

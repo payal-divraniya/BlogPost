@@ -1,0 +1,125 @@
+
+  /* Logout Confirmation Modal */
+  .logoutmodel-container {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2500;
+    padding: 20px;
+    animation: fadeIn 0.2s ease-out;
+  }
+
+
+    .logout-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      width: 100%;
+      max-width: 440px;
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-xl);
+      animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .logout-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      color: var(--text-subtle);
+      padding: 6px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transition: all var(--transition-fast);
+    }
+
+    .logout-close-btn:hover {
+      color: var(--text-main);
+      background: var(--bg-subtle);
+    }
+
+    .logout-icon-wrap {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: rgba(239, 68, 68, 0.12);
+      color: #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin: 0 auto 20px;
+    }
+
+    .logout-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .logout-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .cancle-btn {
+      flex: 1;
+      padding: 11px 20px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 600;
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      border: 1px solid var(--border-light);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .cancle-btn:hover {
+      color: var(--text-main);
+      background: var(--border-light);
+    }
+
+    .yes-btn {
+      flex: 1;
+      padding: 11px 20px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 600;
+      background: #ef4444;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .yes-btn:hover {
+      background: #dc2626;
+      transform: translateY(-1px);
+    }
+
+    /* Legacy Support */
+    .logout-whitebox {
+      background: var(--bg-surface);
+      border-radius: 12px;
+      padding: 30px;
+    }
